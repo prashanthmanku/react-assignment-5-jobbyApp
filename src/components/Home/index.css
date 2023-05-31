@@ -5,6 +5,7 @@
   background-image: url('https://assets.ccbp.in/frontend/react-js/home-sm-bg.png');
   background-size: cover;
   height: 90vh;
+  margin-top: 10vh;
 }
 .home-width-container {
   width: 90%;

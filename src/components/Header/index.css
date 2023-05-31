@@ -1,10 +1,17 @@
 .nav-header {
-  background-color: #272727;
+  background-color: #2c364c;
+  background-color: #3e4b66;
+  background-image: linear-gradient(to right, #272727, #2c364c, #3e4b66);
+
   display: flex;
   justify-content: center;
   /* padding: 20px 0px; */
   align-items: center;
   height: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .nav-width-container {
   width: 90%;

@@ -74,6 +74,7 @@ class JobItemDetails extends Component {
     }
     const response = await fetch(url, options)
     const data = await response.json()
+    console.log(response, data)
 
     if (response.ok === true) {
       const updatedData = {
@@ -124,7 +125,6 @@ class JobItemDetails extends Component {
     const {JobDetails, similarJobs} = jobItemData
 
     if (Object.keys(jobItemData).length >= 1) {
-      console.log('mmm')
       const {
         companyLogoUrl,
         companyWebsiteUrl,
@@ -186,7 +186,7 @@ class JobItemDetails extends Component {
                     <img
                       src={each.imageUrl}
                       className="skill-img"
-                      alt="skills"
+                      alt={each.name}
                     />
                     <p className="skill-name">{each.name}</p>
                   </li>
@@ -232,7 +232,7 @@ class JobItemDetails extends Component {
       />
       <h1 className="failure-view-heading">Oops! Something Went Wrong</h1>
       <p className="failure-view-description">
-        We cannot seem to find the page you are looking for.
+        We cannot seem to find the page you are looking for
       </p>
       <button
         type="button"
@@ -257,7 +257,7 @@ class JobItemDetails extends Component {
         return this.renderitemDetailsLoaderView()
       case apistatusConstants.success:
         return this.renderitemDetailsSuccessView()
-      case apiStatus.failure:
+      case apistatusConstants.failure:
         return this.renderitemDetailsFailureView()
       default:
         return null

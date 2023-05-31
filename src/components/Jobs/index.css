@@ -1,0 +1,233 @@
+.jobs-route-bg-container {
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px;
+}
+.jobs-width-container {
+  width: 90%;
+  max-width: 1100px;
+}
+.profile-queries-container {
+}
+.search-input-container {
+  /* border: 1px solid #7e858e; */
+  border: 1px solid #475569;
+  width: 100%;
+  max-width: 450px;
+  height: 35px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.input-field {
+  width: 85%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #f8fafc;
+  padding: 8px 16px;
+  font-size: 15px;
+}
+.search-icon-btn {
+  background-color: #272727;
+  width: 15%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 100%;
+
+  border-radius: 0px 4px 4px 0px;
+}
+.search-icon {
+  color: #f8fafc;
+  height: 15px;
+  width: 15px;
+}
+.profile-view {
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  background-size: cover;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+.profile-img {
+  width: 50px;
+}
+.user-name {
+  color: #6366f1;
+  font-size: 18px;
+  font-weight: 500;
+}
+.user-bio {
+  color: #475569;
+  font-size: 14px;
+  font-weight: 400;
+}
+.loader-container {
+  /* min-height: 150px; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.retry-btn {
+  background-color: #6366f1;
+  color: #f8fafc;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-size: 400;
+}
+.employment-types-container {
+  color: #f8fafc;
+  margin: 20px 0px;
+  border-top: 2px solid #475569;
+  border-bottom: 2px solid #475569;
+}
+.employment-type-heading {
+  font-size: 18px;
+  font-weight: 500;
+}
+.employment-list {
+  list-style-type: none;
+  padding: 0px;
+  /* line-height: 30px; */
+  font-size: 16px;
+  font-weight: 400;
+}
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.emplaoyment-checkbox {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.emplaoyment-label-text {
+  cursor: pointer;
+}
+.salary-range-container {
+  color: #f8fafc;
+  margin-bottom: 40px;
+}
+.radio {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.li {
+  display: flex;
+  align-items: center;
+}
+.jobs-list-container {
+  list-style-type: none;
+  padding: 0px;
+}
+.mobile-search-bar {
+}
+.desktop-search-bar {
+  display: none;
+}
+.nojobs-container {
+  color: #f8fafc;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  text-align: center;
+}
+.no-jobs-img {
+  width: 70%;
+  max-width: 400px;
+  margin-top: 40px;
+}
+.no-jobs-heading {
+  font-size: 20px;
+  font-weight: 400;
+}
+.no-jobs-description {
+  font-size: 15px;
+  font-weight: 400;
+}
+.failure-view-container {
+  color: #f8fafc;
+  text-align: center;
+  padding-top: 40px;
+}
+.failure-view-img {
+  width: 70%;
+  max-width: 400px;
+}
+.failure-view-heading {
+  font-size: 17px;
+  font-weight: 500;
+}
+.failure-view-description {
+  font-size: 13px;
+}
+.jobs-failure-retry-btn {
+  background-color: #6366f1;
+  color: #f8fafc;
+  padding: 5px 18px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+.jobs-view-container {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .jobs-width-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  .profile-queries-container {
+    width: 30%;
+    margin-right: 30px;
+  }
+  .job-cards {
+    width: 90%;
+  }
+  .mobile-search-bar {
+    display: none;
+  }
+  .desktop-search-bar {
+    display: flex;
+  }
+  .no-jobs-heading {
+    font-size: 25px;
+  }
+  .no-jobs-description {
+    font-size: 17px;
+  }
+  .failure-view-heading {
+    font-size: 25px;
+  }
+  .failure-view-description {
+    font-size: 17px;
+  }
+  .jobs-failure-retry-btn {
+    font-size: 17px;
+  }
+  .jobs-view-container {
+    min-height: 400px;
+  }
+}

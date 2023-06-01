@@ -62,7 +62,7 @@ class JobItemDetails extends Component {
     this.setState({apiStatus: apistatusConstants.inProgress})
     const jwtToken = Cookies.get('jwt_token')
     const {match} = this.props
-    console.log(match)
+
     const {params} = match
     const {id} = params
     const url = `https://apis.ccbp.in/jobs/${id}`
@@ -74,14 +74,13 @@ class JobItemDetails extends Component {
     }
     const response = await fetch(url, options)
     const data = await response.json()
-    console.log(response, data)
 
     if (response.ok === true) {
       const updatedData = {
         JobDetails: this.getFormattedJobDetails(data.job_details),
         similarJobs: this.getFormattedsimilarJobs(data.similar_jobs),
       }
-      console.log(updatedData)
+
       this.setState({
         jobItemData: updatedData,
         apiStatus: apistatusConstants.success,
@@ -109,7 +108,7 @@ class JobItemDetails extends Component {
         JobDetails: this.getFormattedJobDetails(data.job_details),
         similarJobs: this.getFormattedsimilarJobs(data.similar_jobs),
       }
-      console.log(updatedData)
+
       this.setState({
         jobItemData: updatedData,
         apiStatus: apistatusConstants.success,
@@ -121,7 +120,7 @@ class JobItemDetails extends Component {
 
   renderitemDetailsSuccessView = () => {
     const {jobItemData} = this.state
-    console.log(Object.keys(jobItemData).length)
+
     const {JobDetails, similarJobs} = jobItemData
 
     if (Object.keys(jobItemData).length >= 1) {

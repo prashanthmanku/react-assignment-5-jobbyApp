@@ -90,7 +90,7 @@ class Jobs extends Component {
         profileImageUrl: data.profile_image_url,
         shortBio: data.short_bio,
       }
-      console.log(updatedProfileData)
+
       this.setState({
         profileData: updatedProfileData,
         profileStaus: apistatusConstants.success,
@@ -126,7 +126,7 @@ class Jobs extends Component {
         rating: each.rating,
         title: each.title,
       }))
-      console.log(updatedData)
+
       this.setState({
         jobsData: updatedData,
         jobsApiStatus: apistatusConstants.success,
@@ -141,7 +141,6 @@ class Jobs extends Component {
   }
 
   onClickSearchIcon = () => {
-    console.log('oop')
     this.getJobsData()
   }
 
